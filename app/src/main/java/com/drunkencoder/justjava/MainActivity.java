@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void decrement(View view) {
-        quantity++;
+        quantity--;
         display(quantity);
         displayPrice(quantity*price);
 
