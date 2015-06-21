@@ -25,7 +25,9 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        System.out.print("grazie");
+        String stringa = (quantity*price)+" Grazie!!!";
+        displayMessage(stringa);
+
     }
 
     public void increment(View view) {
@@ -60,7 +62,10 @@ public class MainActivity extends ActionBarActivity {
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
-
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.textView4);
+        priceTextView.setText(message);
+    }
 
 
 
